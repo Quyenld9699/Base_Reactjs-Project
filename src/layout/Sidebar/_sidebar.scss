@@ -1,2 +1,19 @@
 .sidebar {
+    // background-color: rgba($color: #e2850c, $alpha: 0.08);
+    position: fixed;
+    top: $header_height;
+    left: 0;
+    width: $sidebar_width;
+    height: calc(100vh - $header_height);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 1px dashed $primary_color;
+    background-color: #fff;
+    z-index: $sidebar_Zindex;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
 }

@@ -1,4 +1,13 @@
 .content {
-    color: $primary_color;
-    background-color: $background_color;
+    margin-top: $header_height;
+    margin-left: $sidebar_width;
+    min-height: calc(100vh - $header_height);
+    position: relative;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        margin-left: 0;
+    }
 }

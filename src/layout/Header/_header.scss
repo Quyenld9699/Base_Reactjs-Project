@@ -1,2 +1,11 @@
 .header {
+    color: #fff;
+    background-color: $primary_color;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: $header_height;
+    border-bottom: 1px solid $primary_color;
+    z-index: $header_Zindex;
 }
